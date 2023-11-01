@@ -42,7 +42,7 @@ function circles(x, y, dx, dy, r) {
     this.draw = function() {
         c.beginPath()
         c.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-        c.strokeStyle = "black"
+        c.strokeStyle = this.color;
         c.stroke();
         c.fillStyle = this.color;
         c.fill();
