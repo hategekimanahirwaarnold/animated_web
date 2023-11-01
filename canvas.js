@@ -3,38 +3,6 @@ let c = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-// c.fillStyle = 'rgb(255, 0, 0)';
-// c.fillRect(100, 100, 100, 100);
-// c.fillStyle = 'rgb(0, 244, 0)';
-// c.fillRect(200, 200, 100, 100);
-// c.fillStyle = 'rgb(255, 0, 255)';
-// c.fillRect(300, 100, 100, 100)
-// // c.fillRect(400, 200, 100, 100)
-// // c.fillRect(500, 100, 100, 100)
-
-// //line
-// c.beginPath();
-// c.moveTo(50, 300);
-// c.lineTo(300, 100);
-// c.lineTo(400, 200);
-// c.strokeStyle = "blue"
-// c.stroke()
-
-// //arc
-// for (var i = 0; i < 50; i++) {
-//     var x = Math.random() * window.innerWidth;
-//     var y = Math.random() * window.innerHeight;
-//     c.beginPath()
-//     c.arc(x, y, 30, 0, Math.PI * 2);
-//     c.stroke()
-// }
-
-
-
-// c.beginPath();
-// c.arc(x, y, r, 0, Math.PI * 2, false);
-// c.strokeStyle = "blue"
-// c.stroke();
 
 var mouse = {
     x: undefined,
@@ -74,7 +42,7 @@ function circles(x, y, dx, dy, r) {
     this.draw = function() {
         c.beginPath()
         c.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-        c.strokeStyle = "yellow"
+        c.strokeStyle = "black"
         c.stroke();
         c.fillStyle = this.color;
         c.fill();
